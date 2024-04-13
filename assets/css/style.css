@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;;
+}
+.text.color{ color: #002577;}
+.background{background: #00FFFF;
+            background: #022D7C;}
+
+/* Header Section Start */
+header{
+    width: 100%;
+    height: 60px;
+    color: #fff;
+    display: flex;
+    line-height: 60px;
+    padding: 0px 100px;
+    background: #022D7C;
+    justify-content: space-between;
+}
+header .company-name span{
+    font-size: 15px;
+    font-weight: normal;
+}
+header .contact span{
+    color: #00F9FB;
+}
+/* Header Section End */
+
+/* Banner Section Start */
+main{
+    width: 100%;
+    height: 550px;
+    color: #fff;
+    padding: 0px 100px;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/Industrial.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .indus h1{
+    font-weight: normal;
+    font-size: 45px;
+}
+main form{
+    background: #002577;
+    padding: 12px;
+    border-radius: 10px;
+}
+main form input, button{
+    height: 45px;
+    margin: 2px 0px;
+    text-align: center;
+}
+/* Banner Section End */
+
+/* Main Section Start */
+.main{
+    width: 100%;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.innovation , .people , .solutions{
+    width: 30%;
+}
+.main img{
+    width: 100%;
+} 
+.main h2{
+    color: #002577;
+}
+.main p{
+    color: #022D7C;
+}
+/* Main Section End */
+
+/*About Us Section Start  */
+.about{
+    width: 100%;
+    height: auto;
+    color: #fff;
+    text-align: center;
+    padding: 60px 300px;
+    background: #022D7C;
+}
+.about h2{
+    font-size: 33px;
+    margin-bottom: 7px;
+}
+.about p{
+    font-weight: normal;
+}
+.about button{
+    color: #fff;
+    margin-top: 10px;
+    font-weight: bold;
+    padding: 15px 120px;
+    background : #022D7C;
+    border: 2px solid #fff;
+    border-radius: 4px;
+}
+/*About Us Section End  */
+
+/*  Company Detail Section Start */
+.company-detail{
+    width: 100%;
+    padding: 0px 100px;
+}
+.company-detail .top, .company-detail .bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.top div, .bottom div{
+    width: 50%;
+}
+div img{
+    width: 100%;
+}
+div .content{
+    padding: 100px 50px 100px 100px;
+}
+/*  Company Detail Section End */
+
+/* Footer Section Start */
+.Footer{
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    background: #022D7C;
+    font-weight: bold;
+}
+/* Footer Section End */
+
+/* Media Query Section Start */
+@media screen and (max-width:992px) {
+    header{
+        padding:  5px;
+    }
+    header h2{
+         font-size: 20px;
+    }
+    main{
+        display: flex;
+        padding: 0px;
+    }
+    .main{
+        padding:20px 30px ;
+    }   
+}
+
+@media screen and (max-width:768px) {
+    div.content{
+        padding: 10px;
+    }
+    footer{
+        padding: 12px 30px;
+    }
+    .about{
+        padding: 12px 50px;
+    }
+}
+
+@media  screen and (max-width:576px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        height: 120px;
+        text-align: center;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        height: 550px;
+        padding: 10px 10px;
+    }    
+    main .indus h1{
+        display: block;
+        font-weight: normal;
+        font-size: 30px;
+    }
+    main .indus span{
+        display: block;
+        font-size: 50px;
+        font-weight: 300px;
+    }  
+    .main{       
+        width: 100%;
+        padding: 10px 70px;
+        display: flex;
+        flex-direction: column;
+    }
+    .innovation , .people , .solution{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .main img{
+        width: 100%;
+    }
+    .about{
+        width: 100%;  
+        padding: 10px 10px;      
+    }
+     .about button{
+        margin-top: 10px;
+        padding: 0px 70px;      
+    }
+    .company-detail{     
+        width: 100%;
+        padding: 0px 10px;
+        margin-top: 10px;
+    }
+    .company-detail .top,
+    .company-detail .bottom{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }   
+    .top div , .bottom div{
+        width: 100%;
+    }
+    div img{
+        width: 80%;
+        padding: 10px;
+        text-align: center;
+    }   
+    div .content{
+           padding:  10px;          
+    }
+}
+
+@media  screen and (max-width:375px){
+    main{
+        height: 700px;
+        padding: 0px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;         
+   }      
+    main .indus h1{ 
+        font-size: 12px;
+    }
+    main .indus span{
+        display: block;
+        font-size: 15px;
+        font-weight: 300;
+    }
+    main form{  
+        width: 50%;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    main form input , button{
+        text-align: center;
+        height: 20px;
+        margin: 2px 0px;   
+    }       
+    main form input{
+        width: 100%;
+        display: block;
+        height: 12px;
+    }
+    main form .company{
+        width: 50%;
+    }
+}
+/* Media Query Section End */
+
